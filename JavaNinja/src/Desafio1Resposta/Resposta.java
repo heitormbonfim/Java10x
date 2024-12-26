@@ -1,6 +1,6 @@
 package Desafio1Resposta;
 
-public class Main {
+public class Resposta {
     public static void main(String[] args) {
 
         // Ninja 1
