@@ -1,6 +1,6 @@
 package Desafio1;
 
-public class Main {
+public class Desafio1 {
     public static void main(String[] args) {
         Ninjas ninja1 = new Ninjas("Naruto", 14, "Capturar o 3 Hokage", 'A', false);
         Ninjas ninja2 = new Ninjas("Sasuke", 15, "Matar um porco", 'D', false);
