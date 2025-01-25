@@ -1,4 +1,4 @@
-package TiposDeDados;
+package NivelFacil.Arrays.TiposDeDados;
 
 public class DadosPrimitivos {
     // shortcut to generate the public static void main: psvm

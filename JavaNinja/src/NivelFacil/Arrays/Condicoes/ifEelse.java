@@ -1,4 +1,4 @@
-package Condicoes;
+package NivelFacil.Arrays.Condicoes;
 
 public class ifEelse {
     public static void main(String[] args) {

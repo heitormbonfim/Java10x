@@ -1,4 +1,4 @@
-package Desafio1Resposta;
+package NivelFacil.Arrays.Desafio1Resposta;
 
 public class Resposta {
     public static void main(String[] args) {

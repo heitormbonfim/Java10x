@@ -1,4 +1,4 @@
-package Desafio1;
+package NivelFacil.Arrays.Desafio1;
 
 public class Ninjas {
     String name;

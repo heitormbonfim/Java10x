@@ -1,4 +1,4 @@
-package Desafio2;
+package NivelFacil.Arrays.Desafio2;
 
 import java.util.Scanner;
 

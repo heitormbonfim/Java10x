@@ -1,4 +1,4 @@
-package Arrays;
+package NivelFacil.Arrays;
 
 import java.util.Arrays;
 
