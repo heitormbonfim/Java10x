@@ -1,6 +1,6 @@
 package NivelIntermediario;
 
-public class Ninja {
+public abstract class Ninja {
     String nome;
     String aldeia;
     int idade;
@@ -13,4 +13,6 @@ public class Ninja {
         int idadeMinima = this.anosParaSeTornarUmHokage(idade);
         System.out.println("Falta " + idadeMinima + " para " + this.nome + " poder se tornar Hokage");
     }
+
+    public void habilidadeEspecial() {};
 }
