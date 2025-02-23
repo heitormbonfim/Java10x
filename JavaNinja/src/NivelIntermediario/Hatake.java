@@ -1,6 +1,16 @@
 package NivelIntermediario;
 
 public class Hatake extends Ninja implements Sharingan, AmbuInterface, HokageInterface  {
+    public Hatake() {
+    }
+
+    public Hatake(String nome, String aldeia, int idade, String habilidadeEspecial, String estrategiaDeBatalha) {
+        super(nome, aldeia, idade, habilidadeEspecial, estrategiaDeBatalha);
+    }
+
+    public Hatake(String nome, String aldeia, int idade, String habilidadeEspecial, String estrategiaDeBatalha, NivelNinja rank) {
+        super(nome, aldeia, idade, habilidadeEspecial, estrategiaDeBatalha, rank);
+    }
 
     @Override
     public void sharinganAtivado() {

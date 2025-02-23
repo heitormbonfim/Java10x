@@ -6,6 +6,9 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     int idade;
     String habilidadeEspecial;
     String estrategiaDeBatalha;
+    NivelNinja rank;
+
+    // TODO: adicionar 2 novos atributos: número de missões e patente do ninja
 
     public Ninja() {}
 
@@ -15,6 +18,13 @@ public abstract class Ninja implements EstrategiaDeBatalha {
         this.idade = idade;
         this.habilidadeEspecial = habilidadeEspecial;
         this.estrategiaDeBatalha = estrategiaDeBatalha;
+    }
+
+    // SOBRECARGA DO CONSTRUTOR
+    // SOBRECARGA SERVE PARA NÃO QUEBRAR O CÓDIGO QUE FEZ AS CHAMADAS DOS CONSTRUCTOR ACIMA
+    public Ninja(String nome, String aldeia, int idade, String habilidadeEspecial, String estrategiaDeBatalha, NivelNinja rank) {
+        this(nome, aldeia, idade, habilidadeEspecial, estrategiaDeBatalha); // referencia novamente os anteriores acima em vez de repassar como this.nome = nome, etc
+        this.rank = rank;
     }
 
     private int anosParaSeTornarUmHokage(int idadeMinimaParaSerHokage) {

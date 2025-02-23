@@ -12,6 +12,10 @@ public class Uchiha extends Ninja implements Sharingan {
         super(nome, aldeia, idade, habilidadeEspecial, estrategiaDeBatalha);
     }
 
+    public Uchiha(String nome, String aldeia, int idade, String habilidadeEspecial, String estrategiaDeBatalha, NivelNinja rank) {
+        super(nome, aldeia, idade, habilidadeEspecial, estrategiaDeBatalha, rank);
+    }
+
     @Override
     public void sharinganAtivado() {
         System.out.println("Meu nome é " + nome + " e meu sharingan ativou");

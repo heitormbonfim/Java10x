@@ -8,6 +8,8 @@ public class Senju extends Hokages {
     public Senju() {
     }
 
+
+
     @Override
     public void sabedoriaHokage() {
         System.out.println("Você adquiriu a sabedoreia Hokage");

@@ -19,5 +19,15 @@ public class Main {
         Kakashi.ninjaDeElite();
         Kakashi.souUmHokage();
 
+        Uchiha Madara = new Uchiha();
+        Madara.nome = "Madara";
+        Madara.idade = 150;
+        Madara.habilidadeEspecial = "Rinnegan";
+        Madara.rank= NivelNinja.HAGE;
+        Madara.estrategiaDeBatalha = "Imortalidade";
+        Madara.habilidadeEspecial();
+        Madara.estrategiaDeBatalha();
+
+
     }
 }
