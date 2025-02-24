@@ -27,7 +27,9 @@ public class Main {
         Madara.estrategiaDeBatalha = "Imortalidade";
         Madara.habilidadeEspecial();
         Madara.estrategiaDeBatalha();
-
-
+        // Metodo comum
+        Madara.inteligenciaDeCombate();
+        // Metodo sobrecarregado
+        Madara.inteligenciaDeCombate(150);
     }
 }
