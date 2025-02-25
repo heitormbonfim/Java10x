@@ -6,10 +6,14 @@ public class Main {
         System.out.println(Hashirama.nome);
         Hashirama.sabedoriaHokage();
 
+        System.out.println("===================================");
+
         Uchiha Itachi = new Uchiha("Itachi Uchiha", "Folha", 27, "Sharingan", "Amaterasu");
         System.out.println(Itachi.nome);
         Itachi.estrategiaDeBatalha();
         Itachi.sharinganAtivado();
+
+        System.out.println("===================================");
 
         Hatake Kakashi = new Hatake();
         Kakashi.nome = "Kakashi";
@@ -18,6 +22,8 @@ public class Main {
         Kakashi.sharinganAtivado();
         Kakashi.ninjaDeElite();
         Kakashi.souUmHokage();
+
+        System.out.println("===================================");
 
         Uchiha Madara = new Uchiha();
         Madara.nome = "Madara";
@@ -31,5 +37,10 @@ public class Main {
         Madara.inteligenciaDeCombate();
         // Metodo sobrecarregado
         Madara.inteligenciaDeCombate(150);
+
+        System.out.println("===================================");
+
+
+
     }
 }

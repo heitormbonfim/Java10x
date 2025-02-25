@@ -8,6 +8,54 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     String estrategiaDeBatalha;
     NivelNinja rank;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getAldeia() {
+        return aldeia;
+    }
+
+    public void setAldeia(String aldeia) {
+        this.aldeia = aldeia;
+    }
+
+    public String getHabilidadeEspecial() {
+        return habilidadeEspecial;
+    }
+
+    public void setHabilidadeEspecial(String habilidadeEspecial) {
+        this.habilidadeEspecial = habilidadeEspecial;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getEstrategiaDeBatalha() {
+        return estrategiaDeBatalha;
+    }
+
+    public void setEstrategiaDeBatalha(String estrategiaDeBatalha) {
+        this.estrategiaDeBatalha = estrategiaDeBatalha;
+    }
+
+    public NivelNinja getRank() {
+        return rank;
+    }
+
+    public void setRank(NivelNinja rank) {
+        this.rank = rank;
+    }
+
     // TODO: adicionar 2 novos atributos: número de missões e patente do ninja
 
     public Ninja() {}
@@ -52,5 +100,15 @@ public abstract class Ninja implements EstrategiaDeBatalha {
 
     public void inteligenciaDeCombate(int qi){
         System.out.println("Meu nome é "+ this.nome + " e essa é minha inteligencia de combate " + qi);
+    }
+
+    @Override
+    public String toString() {
+        return "Esse é o método toString para Referencia de memória, e meu nome é " + 
+        this.nome + 
+        " e eu vivo na " + 
+        this.aldeia +
+        " e essa é minha referência de memória: "+
+        super.toString() ;
     }
 }
