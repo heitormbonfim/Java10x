@@ -16,7 +16,7 @@ public class Uchiha extends Ninja implements Sharingan {
         super(nome, aldeia, idade, habilidadeEspecial, estrategiaDeBatalha, rank);
     }
 
-    @Override
+    @Override // Override é mais usado por conta de conversão e evitar erros de digitação
     public void sharinganAtivado() {
         System.out.println("Meu nome é " + nome + " e meu sharingan ativou");
     }

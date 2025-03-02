@@ -29,7 +29,7 @@ public class Main {
         Madara.nome = "Madara";
         Madara.idade = 150;
         Madara.habilidadeEspecial = "Rinnegan";
-        Madara.rank= NivelNinja.HAGE;
+        Madara.rank = NivelNinja.HAGE;
         Madara.estrategiaDeBatalha = "Imortalidade";
         Madara.habilidadeEspecial();
         Madara.estrategiaDeBatalha();
@@ -40,7 +40,15 @@ public class Main {
 
         System.out.println("===================================");
 
+        Uzumaki Naruto = new Uzumaki();
+        Naruto.setNome("Naruto Uzumaki");
+        Naruto.tacarKunai();
+        System.out.println(Naruto.getVaiMorrer());
 
+        System.out.println("===================================");
+
+        Ambu testAmbu = new Ambu();
+        testAmbu.ambu();
 
     }
 }
