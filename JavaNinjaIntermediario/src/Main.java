@@ -1,3 +1,5 @@
+import eums.RankDeMissoes;
+import modules.Missoes;
 import modules.Uchiha;
 import modules.Uzumaki;
 
@@ -14,5 +16,14 @@ public class Main {
     System.out.println(sasuke);
     sasuke.setNome("Sasuke Uchiha");
     System.out.println("Nome: " + sasuke.getNome());
+
+    System.out.println("---------------- Missões ----------------");
+    Missoes resgartarCachorro = new Missoes("Resgatar Cachorro", RankDeMissoes.D);
+    resgartarCachorro.exibirDetalhes();
+
+    Missoes matarMadara = new Missoes("Matar Madara", RankDeMissoes.S);
+    matarMadara.exibirDetalhes();
+
   }
+
 }
