@@ -1,3 +1,4 @@
+import eums.Bijus;
 import eums.RankDeMissoes;
 import modules.Missoes;
 import modules.Uchiha;
@@ -6,7 +7,7 @@ import modules.Uzumaki;
 public class Main {
   public static void main(String[] args) {
     System.out.println("---------------- Uzumaki ----------------");
-    Uzumaki naruto = new Uzumaki("Naruto", "Folha", 17, 20);
+    Uzumaki naruto = new Uzumaki("Naruto", "Folha", 17, 20, Bijus.KYUBI);
     System.out.println(naruto);
     naruto.setNome("Naruto Uzumaki");
     System.out.println("Nome: " + naruto.getNome());
@@ -16,6 +17,7 @@ public class Main {
     System.out.println(sasuke);
     sasuke.setNome("Sasuke Uchiha");
     System.out.println("Nome: " + sasuke.getNome());
+    sasuke.ativarSharingan();
 
     System.out.println("---------------- Missões ----------------");
     Missoes resgartarCachorro = new Missoes("Resgatar Cachorro", RankDeMissoes.D);
