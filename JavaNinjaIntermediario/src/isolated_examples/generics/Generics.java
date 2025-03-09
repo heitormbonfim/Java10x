@@ -13,5 +13,12 @@ public class Generics {
     bolsaGenerica.colocarEquipamentosGenericos(pergaminho);
 
     System.out.println(bolsaGenerica);
+
+    System.out.println("------------------------");
+    BolsaNinja<Object> bolsaNinja = new BolsaNinja<>();
+    bolsaNinja.adicionarFerramenta(new EquipamentoNinja("Kunai"));
+    bolsaNinja.adicionarFerramenta(shuriken);
+    bolsaNinja.adicionarFerramenta(pergaminho);
+    bolsaNinja.mostrarFerramentas();
   }
 }
