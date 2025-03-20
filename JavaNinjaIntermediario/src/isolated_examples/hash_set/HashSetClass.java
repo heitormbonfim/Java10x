@@ -2,8 +2,10 @@ package isolated_examples.hash_set;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class HashSetClass {
   public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class HashSetClass {
 
     List<String> ninjas = new ArrayList<>();
 
+    ninjas.add("Zabuza");
     ninjas.add("Naruto");
     ninjas.add("Sakura");
     ninjas.add("Naruto");
@@ -18,6 +21,8 @@ public class HashSetClass {
     ninjas.add("Sakura");
     ninjas.add("Rock Lee");
     ninjas.add("Naruto");
+    ninjas.add("Boruto");
+    ninjas.add("Danzou");
 
     System.out.println("ninjas = " + ninjas);
 
@@ -46,5 +51,28 @@ public class HashSetClass {
     System.out.println("ninjasSet = " + ninjasSet);
 
     System.out.println("---- TreeSet vs HashSet ----");
+    // TreeSet é usado quando queremos por em uma ordem sequencial lógica,
+    // alfabética, númerica, etc
+    Set<String> ninjasTreeSet = new TreeSet<>();
+    Set<Integer> numbers = new TreeSet<>();
+
+    numbers.add(5);
+    numbers.add(5);
+    numbers.add(3);
+    numbers.add(9);
+    numbers.add(2);
+
+    ninjasTreeSet.addAll(ninjas);
+
+    System.out.println("ninjasTreeSet = " + ninjasTreeSet);
+    System.out.println("numbers = " + numbers);
+
+    System.out.println("---- Usando LinkedHashSet ----");
+    // O LinkedHashSet vai colocar os dados na ordem de implementação
+    Set<String> ninjasLinkedHashSet = new LinkedHashSet<>();
+
+    ninjasLinkedHashSet.addAll(ninjas);
+
+    System.out.println("ninjasLinkedHashSet = " + ninjasLinkedHashSet);
   }
 }
